@@ -4,5 +4,6 @@ def faren2celc(degrees):
 def celc2faren(degrees):
     return degrees *1.8 + 32
 
-print(celc2faren(3.6))
+print(celc2faren(36,6))
+print(celc2faren(37))
 

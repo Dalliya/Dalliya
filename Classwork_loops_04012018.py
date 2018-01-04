@@ -55,3 +55,18 @@ print(sum_of_n(100))
 print(sum_of_n(10))
 print(sum_of_n(3))
 print(sum_of_n(42))
+
+######################################################################
+text = 'Вы перешли в режим инкогнито.'
+print(len(text.split(' '))-1)
+print(text.count(' '))
+
+
+def find_num_of_uppers(text):
+    upper_total = 0
+    for char in text:
+       if char.isupper():
+          upper_total += 1
+    return upper_total
+
+print(find_num_of_uppers(text))

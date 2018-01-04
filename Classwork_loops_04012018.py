@@ -70,3 +70,20 @@ def find_num_of_uppers(text):
     return upper_total
 
 print(find_num_of_uppers(text))
+
+
+########################################################################
+def camelize_me(var_name):
+    var_name_lst = var_name.split('_')
+    result = ''
+    for part_name in var_name_lst:
+        print(part_name)
+        print(part_name, part_name.capitalize())
+        result += part_name.capitalize()
+    return result
+
+
+print(camelize_me('this_is_a_long_snake_style_var_name'))
+print(camelize_me('style_var_name'))
+print(camelize_me('a_b_c_d_e'))
+

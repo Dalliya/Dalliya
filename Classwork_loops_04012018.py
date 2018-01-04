@@ -43,3 +43,15 @@ sum_total = 0
 for i in range(1, 101):
     sum_total = sum_total + i
 print(sum_total)
+
+#####################################################################
+def sum_of_n(n):
+    sum_total = 0
+    for i in range(1, n+1):
+        sum_total += i
+    return sum_total
+
+print(sum_of_n(100))
+print(sum_of_n(10))
+print(sum_of_n(3))
+print(sum_of_n(42))

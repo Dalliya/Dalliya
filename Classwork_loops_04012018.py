@@ -1,3 +1,5 @@
+import random
+
 for i in range(10):
     if i % 2 == 0:
         print('hello world!', i)
@@ -86,3 +88,15 @@ def camelize_me(var_name):
 print(camelize_me('this_is_a_long_snake_style_var_name'))
 print(camelize_me('style_var_name'))
 print(camelize_me('a_b_c_d_e'))
+
+#######################################################################
+def avr_whatever_of_n(n, lower_bound, upper_bound):
+    rand_total = 0
+    for _  in range(n):
+        rand_num = random.randint(lower_bound, upper_bound)
+        print(rand_num)
+        rand_total += rand_num
+    avr_rand = rand_total / n
+    return avr_rand
+
+print('%.2f' % avr_whatever_of_n(11000, 1000, 2000))
